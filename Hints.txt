@@ -10,36 +10,208 @@
 -[id<UITextFieldDelegate> textField:shouldChangeCharactersInRange:replacementString:]	BOOL	UITextField *	NSRange	NSString *
 -[id<UITextFieldDelegate> textFieldShouldClear:]	BOOL	UITextField *
 -[id<UITextFieldDelegate> textFieldShouldReturn:]	BOOL	UITextField
--[id<NSObject> hash]	NSUInteger-[id<NSObject> conformsToProtocol:]	BOOL	Protocol *-[id<NSObject> retainCount]	NSUInteger-[id<NSObject> description]	NSString *
--[id<UIModalViewDelegate> modalView:clickedButtonAtIndex:]	void	UIModalView *	NSInteger-[id<UIModalViewDelegate> modalViewCancel:]	void	UIModalView *-[id<UIModalViewDelegate> willPresentModalView:]	void	UIModalView *-[id<UIModalViewDelegate> didPresentModalView:]	void	UIModalView *-[id<UIModalViewDelegate> modalView:willDismissWithButtonIndex:]	void	UIModalView *	NSInteger-[id<UIModalViewDelegate> modalView:didDismissWithButtonIndex:]	void	UIModalView *	NSInteger
+
+-[id<NSObject> hash]	NSUInteger
+-[id<NSObject> conformsToProtocol:]	BOOL	Protocol *
+-[id<NSObject> retainCount]	NSUInteger
+-[id<NSObject> description]	NSString *
+
+-[id<UIModalViewDelegate> modalView:clickedButtonAtIndex:]	void	UIModalView *	NSInteger
+-[id<UIModalViewDelegate> modalViewCancel:]	void	UIModalView *
+-[id<UIModalViewDelegate> willPresentModalView:]	void	UIModalView *
+-[id<UIModalViewDelegate> didPresentModalView:]	void	UIModalView *
+-[id<UIModalViewDelegate> modalView:willDismissWithButtonIndex:]	void	UIModalView *	NSInteger
+-[id<UIModalViewDelegate> modalView:didDismissWithButtonIndex:]	void	UIModalView *	NSInteger
 
 -[id<SBIconListPageControlDelegate> pageControl:didRecieveTouchInDirection:]	void	SBIconListPageControl *	NSInteger
 
--[id<UIScrollViewDelegate> scrollViewDidScroll:]	void	UIScrollView *-[id<UIScrollViewDelegate> scrollViewWillBeginDragging:]	void	UIScrollView *-[id<UIScrollViewDelegate> scrollViewDidEndDragging:willDecelerate:]	void	UIScrollView *	BOOL-[id<UIScrollViewDelegate> scrollViewWillBeginDecelerating:]	void	UIScrollView *-[id<UIScrollViewDelegate> scrollViewDidEndDecelerating:]	void	UIScrollView *-[id<UIScrollViewDelegate> scrollViewDidEndScrollingAnimation:]	void	UIScrollView *-[id<UIScrollViewDelegate> viewForZoomingInScrollView:]	UIView *	UIScrollView *-[id<UIScrollViewDelegate> scrollViewDidEndZooming:withView:atScale:]	void	UIScrollView *	UIView *	CGFloat-[id<UIScrollViewDelegate> scrollViewShouldScrollToTop:]	BOOL	UIScrollView *-[id<UIScrollViewDelegate> scrollViewDidScrollToTop:]	void	UIScrollView *
+-[id<UIScrollViewDelegate> scrollViewDidScroll:]	void	UIScrollView *
+-[id<UIScrollViewDelegate> scrollViewWillBeginDragging:]	void	UIScrollView *
+-[id<UIScrollViewDelegate> scrollViewDidEndDragging:willDecelerate:]	void	UIScrollView *	BOOL
+-[id<UIScrollViewDelegate> scrollViewWillBeginDecelerating:]	void	UIScrollView *
+-[id<UIScrollViewDelegate> scrollViewDidEndDecelerating:]	void	UIScrollView *
+-[id<UIScrollViewDelegate> scrollViewDidEndScrollingAnimation:]	void	UIScrollView *
+-[id<UIScrollViewDelegate> viewForZoomingInScrollView:]	UIView *	UIScrollView *
+-[id<UIScrollViewDelegate> scrollViewDidEndZooming:withView:atScale:]	void	UIScrollView *	UIView *	CGFloat
+-[id<UIScrollViewDelegate> scrollViewShouldScrollToTop:]	BOOL	UIScrollView *
+-[id<UIScrollViewDelegate> scrollViewDidScrollToTop:]	void	UIScrollView *
 
--[id<ISDownloadQueueDelegate> downloadQueue:changedWithRemovals:disappearances:]	void	ISDownloadQueue *	id	id-[id<ISDownloadQueueDelegate> downloadQueueError:]	void	ISDownloadQueue *-[id<ISDownloadQueueDelegate> downloadQueue:downloadStatesChangedAtIndexes:]	void	ISDownloadQueue *	id-[id<ISDownloadQueueDelegate> downloadQueuePreOrdersChanged:]	void	ISDownloadQueue *
--[id<ISDownloadDelegate> download:encounteredError:]	void	ISDownload *	id-[id<ISDownloadDelegate> downloadStatusChanged:]	void	ISDownload *-[id<ISDownloadDelegate> download:failedToLoadArtworkWithError:]	void	ISDownload *	id-[id<ISDownloadDelegate> download:loadedArtworkImage:]	void	ISDownload *	CGImageRef-[id<VSSpeechSynthesizerDelegate> speechSynthesizerDidStartSpeaking:]	void	VSSpeechSynthesizer *-[id<VSSpeechSynthesizerDelegate> speechSynthesizer:didFinishSpeaking:withError:]	void	VSSpeechSynthesizer *	BOOL	id-[id<VSSpeechSynthesizerDelegate> speechSynthesizerDidPauseSpeaking:]	void	VSSpeechSynthesizer *-[id<VSSpeechSynthesizerDelegate> speechSynthesizerDidContinueSpeaking:]	void	VSSpeechSynthesizer *-[id<VSSpeechSynthesizerDelegate> speechSynthesizer:willSpeakRangeOfSpeechString:]	void	VSSpeechSynthesizer *	NSRange-[id<VSRecognitionSessionDelegate> recognitionSessionWillBeginAction:]	BOOL	VSRecognitionSession *-[id<VSRecognitionSessionDelegate> recognitionSessionDidBeginAction:]	void	VSRecognitionSession *-[id<VSRecognitionSessionDelegate> recognitionSession:openURL:]	id	VSRecognitionSession *	NSURL *-[id<VSRecognitionSessionDelegate> recognitionSession:didCompleteActionWithError:]	void	VSRecognitionSession *	id-[id<APSConnectionDelegate> connection:didReceivePublicToken:]	void	APSConnection *	id-[id<APSConnectionDelegate> connection:didReceiveMessageForTopic:userInfo:]	void	APSConnection *	id	id
+-[id<ISDownloadQueueDelegate> downloadQueue:changedWithRemovals:disappearances:]	void	ISDownloadQueue *	id	id
+-[id<ISDownloadQueueDelegate> downloadQueueError:]	void	ISDownloadQueue *
+-[id<ISDownloadQueueDelegate> downloadQueue:downloadStatesChangedAtIndexes:]	void	ISDownloadQueue *	id
+-[id<ISDownloadQueueDelegate> downloadQueuePreOrdersChanged:]	void	ISDownloadQueue *
 
--[id<NSCoding> encodeWithCoder:]	void	NSCoder *-[id<NSCoding> initWithCoder:]	id	NSCoder *
--[id<SPDaemonQueryDelegate> searchDaemonQuery:addedResults:]	void	SPDaemonQuery *	id-[id<SPDaemonQueryDelegate> searchDaemonQuery:encounteredError:]	void	SPDaemonQuery *	id-[id<SPDaemonQueryDelegate> searchDaemonQueryCompleted:]	void	SPDaemonQuery *
--[id<UITableViewDelegate> tableView:willDisplayCell:forRowAtIndexPath:]	void	UITableView *	UITableViewCell *	NSIndexPath *-[id<UITableViewDelegate> tableView:heightForRowAtIndexPath:]	CGFloat	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:heightForHeaderInSection:]	CGFloat	UITableView *	NSInteger-[id<UITableViewDelegate> tableView:heightForFooterInSection:]	CGFloat	UITableView *	NSInteger-[id<UITableViewDelegate> tableView:viewForHeaderInSection:]	UIView *	UITableView *	NSInteger-[id<UITableViewDelegate> tableView:viewForFooterInSection:]	UIView *	UITableView *	NSInteger-[id<UITableViewDelegate> tableView:accessoryTypeForRowWithIndexPath:]	UITableViewCellAccessoryType	UITableView *	id-[id<UITableViewDelegate> tableView:accessoryButtonTappedForRowWithIndexPath:]	void	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:willSelectRowAtIndexPath:]	id	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:willDeselectRowAtIndexPath:]	id	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:didSelectRowAtIndexPath:]	void	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:didDeselectRowAtIndexPath:]	void	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:editingStyleForRowAtIndexPath:]	UITableViewCellEditingStyle	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:]	NSString *	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:shouldIndentWhileEditingRowAtIndexPath:]	BOOL	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:willBeginEditingRowAtIndexPath:]	void	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:didEndEditingRowAtIndexPath:]	void	UITableView *	NSIndexPath *-[id<UITableViewDelegate> tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:]	NSIndexPath *	UITableView *	NSIndexPath *	NSIndexPath *-[id<UITableViewDelegate> tableView:indentationLevelForRowAtIndexPath:]	NSInteger	UITableView *	NSIndexPath *
--[id<UITableViewDataSource> tableView:numberOfRowsInSection:]	NSInteger	UITableView *	NSInteger-[id<UITableViewDataSource> tableView:cellForRowAtIndexPath:]	UITableViewCell *	UITableView *	NSIndexPath *-[id<UITableViewDataSource> numberOfSectionsInTableView:]	NSInteger	UITableView *-[id<UITableViewDataSource> tableView:titleForHeaderInSection:]	NSString *	UITableView *	NSInteger-[id<UITableViewDataSource> tableView:titleForFooterInSection:]	NSString *	UITableView *	NSInteger-[id<UITableViewDataSource> tableView:canEditRowAtIndexPath:]	BOOL	UITableView *	NSIndexPath *-[id<UITableViewDataSource> tableView:canMoveRowAtIndexPath:]	BOOL	UITableView *	NSIndexPath *-[id<UITableViewDataSource> sectionIndexTitlesForTableView:]	NSArray *	UITableView *-[id<UITableViewDataSource> tableView:sectionForSectionIndexTitle:atIndex:]	NSInteger	UITableView *	NSString *	NSInteger-[id<UITableViewDataSource> tableView:commitEditingStyle:forRowAtIndexPath:]	void	UITableView *	UITableViewCellEditingStyle	NSIndexPath *-[id<UITableViewDataSource> tableView:moveRowAtIndexPath:toIndexPath:]	void	UITableView *	NSIndexPath *	NSIndexPath *
+-[id<ISDownloadDelegate> download:encounteredError:]	void	ISDownload *	id
+-[id<ISDownloadDelegate> downloadStatusChanged:]	void	ISDownload *
+-[id<ISDownloadDelegate> download:failedToLoadArtworkWithError:]	void	ISDownload *	id
+-[id<ISDownloadDelegate> download:loadedArtworkImage:]	void	ISDownload *	CGImageRef
 
--[id<UISearchBarDelegate> searchBarShouldBeginEditing:]	BOOL	UISearchBar *-[id<UISearchBarDelegate> searchBarTextDidBeginEditing:]	void	UISearchBar *-[id<UISearchBarDelegate> searchBarShouldEndEditing:]	BOOL	UISearchBar *-[id<UISearchBarDelegate> searchBarTextDidEndEditing:]	void	UISearchBar *-[id<UISearchBarDelegate> searchBar:textDidChange:]	void	UISearchBar *	NSString *-[id<UISearchBarDelegate> searchBar:shouldChangeTextInRange:replacementText:]	BOOL	UISearchBar *	NSRange	NSString *-[id<UISearchBarDelegate> searchBarSearchButtonClicked:]	void	UISearchBar *-[id<UISearchBarDelegate> searchBarBookmarkButtonClicked:]	void	UISearchBar *-[id<UISearchBarDelegate> searchBarCancelButtonClicked:]	void	UISearchBar *-[id<UISearchBarDelegate> searchBar:selectedScopeButtonIndexDidChange:]	void	UISearchBar *	NSIntege
--[SpringBoard applicationDidFinishLaunching:]	void	UIApplication *-[SpringBoard setAppDisabledNowPlayingHUD:bundleIdentifier:]	void	BOOL	NSString *-[SpringBoard showAlertForUnhandledURL:error:]	void	NSURL *	int-[SpringBoard _applicationOpenURL:event:]	void	NSURL *	GSEventRef-[SpringBoard applicationOpenURL:]	void	NSURL *-[SpringBoard applicationOpenURL:publicURLsOnly:]	void	NSURL *	BOOL-[SpringBoard animateBacklightToFactor:duration:didFinishTarget:selector:]	void	CGFloat	NSTimeInterval	id	SEL-[SpringBoard setBacklightLevel:]	void	CGFloat-[SpringBoard springBoardPluginsDirectory]	NSString *-[SpringBoard applicationWillOrderInContext:windowLevel:windowOutput:]	void	unsigned	CGFloat	int-[SpringBoard nowPlayingApp]	SBApplication *-[SpringBoard setNowPlayingInfo:forApplication:]	void	id	SBApplication *-[SpringBoard simpleRemoteRoutingPriorityForApplication:]	unsigned	SBApplication *-[SpringBoard formattedDecimalStringForNumber:]	NSString *	id-[SpringBoard formattedPercentStringForNumber:]	NSString *	id-[SpringBoard _accessibilityRunningApplications]	NSArray *
+-[id<VSSpeechSynthesizerDelegate> speechSynthesizerDidStartSpeaking:]	void	VSSpeechSynthesizer *
+-[id<VSSpeechSynthesizerDelegate> speechSynthesizer:didFinishSpeaking:withError:]	void	VSSpeechSynthesizer *	BOOL	id
+-[id<VSSpeechSynthesizerDelegate> speechSynthesizerDidPauseSpeaking:]	void	VSSpeechSynthesizer *
+-[id<VSSpeechSynthesizerDelegate> speechSynthesizerDidContinueSpeaking:]	void	VSSpeechSynthesizer *
+-[id<VSSpeechSynthesizerDelegate> speechSynthesizer:willSpeakRangeOfSpeechString:]	void	VSSpeechSynthesizer *	NSRange
 
--[SBUIController contentView]	UIView *-[SBUIController window]	UIWindow *-[SBUIController launchIcon:]	void	SBIcon *-[SBUIController activateApplicationAnimated:]	void	SBApplication *-[SBUIController noteStatusBarHeightChanged:duration:]	void	CGFloat	double
--[SBApplicationIcon initWithApplication:]	id	SBApplication *-[SBApplicationIcon icon]	UIImage *-[SBApplicationIcon smallIcon]	UIImage *-[SBApplicationIcon displayName]	NSString *-[SBApplicationIcon displayIdentifier]	NSString *-[SBApplicationIcon tags]	NSArray *-[SBApplicationIcon setBadge:]	void	NSString *
--[SBButtonBar maxIconRows]	NSInteger-[SBButtonBar topIconPadding]	CGFloat				-[SBButtonBar verticalIconPadding]	CGFloat				-[SBButtonBar horizontalInsetForCenteringRow:]	CGFloat	NSInteger-[SBButtonBar originForIconAtX:Y:]	CGPoint	NSInteger	NSInteger-[SBButtonBar iconAtPoint:X:Y:proposedOrder:]	SBIcon *	CGPoint	NSInteger *	NSInteger *	NSInteger *-[SBButtonBar rowAtPoint:]	NSInteger	CGPoint-[SBButtonBar columnAtPoint:]	NSInteger	CGPoint
--[SBStatusBar description]	NSString *-[SBStatusBar _setGlowImage:]	void	UIImage *-[SBStatusBar _setBaseImage:]	void	UIImage *-[SBStatusBar setStatusWindow:]	void	SBStatusWindow *-[SBStatusBar statusWindow]	SBStatusWindow *-[SBStatusBar contentsView]	SBStatusBarContentsWindow *-[SBStatusBar airplaneView]	UIView *-[SBStatusBar setDimmerOverlayColor:]	void	UIColor *-[SBStatusBar hitTest:withEvent:]	UIView *	CGPoint	UIEvent *
--[SBStatusBar touchesBegan:withEvent:]	void	NSSet *	UIEvent *-[SBStatusBar touchesMoved:withEvent:]	void	NSSet *	UIEvent *-[SBStatusBar touchesEnded:withEvent:]	void	NSSet *	UIEvent *
+-[id<VSRecognitionSessionDelegate> recognitionSessionWillBeginAction:]	BOOL	VSRecognitionSession *
+-[id<VSRecognitionSessionDelegate> recognitionSessionDidBeginAction:]	void	VSRecognitionSession *
+-[id<VSRecognitionSessionDelegate> recognitionSession:openURL:]	id	VSRecognitionSession *	NSURL *
+-[id<VSRecognitionSessionDelegate> recognitionSession:didCompleteActionWithError:]	void	VSRecognitionSession *	id
+
+-[id<APSConnectionDelegate> connection:didReceivePublicToken:]	void	APSConnection *	id
+-[id<APSConnectionDelegate> connection:didReceiveMessageForTopic:userInfo:]	void	APSConnection *	id	id
+
+-[id<NSCoding> encodeWithCoder:]	void	NSCoder *
+-[id<NSCoding> initWithCoder:]	id	NSCoder *
+
+-[id<SPDaemonQueryDelegate> searchDaemonQuery:addedResults:]	void	SPDaemonQuery *	id
+-[id<SPDaemonQueryDelegate> searchDaemonQuery:encounteredError:]	void	SPDaemonQuery *	id
+-[id<SPDaemonQueryDelegate> searchDaemonQueryCompleted:]	void	SPDaemonQuery *
+
+-[id<UITableViewDelegate> tableView:willDisplayCell:forRowAtIndexPath:]	void	UITableView *	UITableViewCell *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:heightForRowAtIndexPath:]	CGFloat	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:heightForHeaderInSection:]	CGFloat	UITableView *	NSInteger
+-[id<UITableViewDelegate> tableView:heightForFooterInSection:]	CGFloat	UITableView *	NSInteger
+-[id<UITableViewDelegate> tableView:viewForHeaderInSection:]	UIView *	UITableView *	NSInteger
+-[id<UITableViewDelegate> tableView:viewForFooterInSection:]	UIView *	UITableView *	NSInteger
+-[id<UITableViewDelegate> tableView:accessoryTypeForRowWithIndexPath:]	UITableViewCellAccessoryType	UITableView *	id
+-[id<UITableViewDelegate> tableView:accessoryButtonTappedForRowWithIndexPath:]	void	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:willSelectRowAtIndexPath:]	id	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:willDeselectRowAtIndexPath:]	id	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:didSelectRowAtIndexPath:]	void	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:didDeselectRowAtIndexPath:]	void	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:editingStyleForRowAtIndexPath:]	UITableViewCellEditingStyle	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:]	NSString *	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:shouldIndentWhileEditingRowAtIndexPath:]	BOOL	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:willBeginEditingRowAtIndexPath:]	void	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:didEndEditingRowAtIndexPath:]	void	UITableView *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:]	NSIndexPath *	UITableView *	NSIndexPath *	NSIndexPath *
+-[id<UITableViewDelegate> tableView:indentationLevelForRowAtIndexPath:]	NSInteger	UITableView *	NSIndexPath *
+
+-[id<UITableViewDataSource> tableView:numberOfRowsInSection:]	NSInteger	UITableView *	NSInteger
+-[id<UITableViewDataSource> tableView:cellForRowAtIndexPath:]	UITableViewCell *	UITableView *	NSIndexPath *
+-[id<UITableViewDataSource> numberOfSectionsInTableView:]	NSInteger	UITableView *
+-[id<UITableViewDataSource> tableView:titleForHeaderInSection:]	NSString *	UITableView *	NSInteger
+-[id<UITableViewDataSource> tableView:titleForFooterInSection:]	NSString *	UITableView *	NSInteger
+-[id<UITableViewDataSource> tableView:canEditRowAtIndexPath:]	BOOL	UITableView *	NSIndexPath *
+-[id<UITableViewDataSource> tableView:canMoveRowAtIndexPath:]	BOOL	UITableView *	NSIndexPath *
+-[id<UITableViewDataSource> sectionIndexTitlesForTableView:]	NSArray *	UITableView *
+-[id<UITableViewDataSource> tableView:sectionForSectionIndexTitle:atIndex:]	NSInteger	UITableView *	NSString *	NSInteger
+-[id<UITableViewDataSource> tableView:commitEditingStyle:forRowAtIndexPath:]	void	UITableView *	UITableViewCellEditingStyle	NSIndexPath *
+-[id<UITableViewDataSource> tableView:moveRowAtIndexPath:toIndexPath:]	void	UITableView *	NSIndexPath *	NSIndexPath *
+
+-[id<UISearchBarDelegate> searchBarShouldBeginEditing:]	BOOL	UISearchBar *
+-[id<UISearchBarDelegate> searchBarTextDidBeginEditing:]	void	UISearchBar *
+-[id<UISearchBarDelegate> searchBarShouldEndEditing:]	BOOL	UISearchBar *
+-[id<UISearchBarDelegate> searchBarTextDidEndEditing:]	void	UISearchBar *
+-[id<UISearchBarDelegate> searchBar:textDidChange:]	void	UISearchBar *	NSString *
+-[id<UISearchBarDelegate> searchBar:shouldChangeTextInRange:replacementText:]	BOOL	UISearchBar *	NSRange	NSString *
+-[id<UISearchBarDelegate> searchBarSearchButtonClicked:]	void	UISearchBar *
+-[id<UISearchBarDelegate> searchBarBookmarkButtonClicked:]	void	UISearchBar *
+-[id<UISearchBarDelegate> searchBarCancelButtonClicked:]	void	UISearchBar *
+-[id<UISearchBarDelegate> searchBar:selectedScopeButtonIndexDidChange:]	void	UISearchBar *	NSIntege
+
+-[SpringBoard applicationDidFinishLaunching:]	void	UIApplication *
+-[SpringBoard setAppDisabledNowPlayingHUD:bundleIdentifier:]	void	BOOL	NSString *
+-[SpringBoard showAlertForUnhandledURL:error:]	void	NSURL *	int
+-[SpringBoard _applicationOpenURL:event:]	void	NSURL *	GSEventRef
+-[SpringBoard applicationOpenURL:]	void	NSURL *
+-[SpringBoard applicationOpenURL:publicURLsOnly:]	void	NSURL *	BOOL
+-[SpringBoard animateBacklightToFactor:duration:didFinishTarget:selector:]	void	CGFloat	NSTimeInterval	id	SEL
+-[SpringBoard setBacklightLevel:]	void	CGFloat
+-[SpringBoard springBoardPluginsDirectory]	NSString *
+-[SpringBoard applicationWillOrderInContext:windowLevel:windowOutput:]	void	unsigned	CGFloat	int
+-[SpringBoard nowPlayingApp]	SBApplication *
+-[SpringBoard setNowPlayingInfo:forApplication:]	void	id	SBApplication *
+-[SpringBoard simpleRemoteRoutingPriorityForApplication:]	unsigned	SBApplication *
+-[SpringBoard formattedDecimalStringForNumber:]	NSString *	id
+-[SpringBoard formattedPercentStringForNumber:]	NSString *	id
+-[SpringBoard _accessibilityRunningApplications]	NSArray *
+
+-[SBUIController contentView]	UIView *
+-[SBUIController window]	UIWindow *
+-[SBUIController launchIcon:]	void	SBIcon *
+-[SBUIController activateApplicationAnimated:]	void	SBApplication *
+-[SBUIController noteStatusBarHeightChanged:duration:]	void	CGFloat	double
+
+-[SBApplicationIcon initWithApplication:]	id	SBApplication *
+-[SBApplicationIcon icon]	UIImage *
+-[SBApplicationIcon smallIcon]	UIImage *
+-[SBApplicationIcon displayName]	NSString *
+-[SBApplicationIcon displayIdentifier]	NSString *
+-[SBApplicationIcon tags]	NSArray *
+-[SBApplicationIcon setBadge:]	void	NSString *
+
+-[SBButtonBar maxIconRows]	NSInteger
+-[SBButtonBar topIconPadding]	CGFloat				
+-[SBButtonBar verticalIconPadding]	CGFloat				
+-[SBButtonBar horizontalInsetForCenteringRow:]	CGFloat	NSInteger
+-[SBButtonBar originForIconAtX:Y:]	CGPoint	NSInteger	NSInteger
+-[SBButtonBar iconAtPoint:X:Y:proposedOrder:]	SBIcon *	CGPoint	NSInteger *	NSInteger *	NSInteger *
+-[SBButtonBar rowAtPoint:]	NSInteger	CGPoint
+-[SBButtonBar columnAtPoint:]	NSInteger	CGPoint
+
+-[SBStatusBar description]	NSString *
+-[SBStatusBar _setGlowImage:]	void	UIImage *
+-[SBStatusBar _setBaseImage:]	void	UIImage *
+-[SBStatusBar setStatusWindow:]	void	SBStatusWindow *
+-[SBStatusBar statusWindow]	SBStatusWindow *
+-[SBStatusBar contentsView]	SBStatusBarContentsWindow *
+-[SBStatusBar airplaneView]	UIView *
+-[SBStatusBar setDimmerOverlayColor:]	void	UIColor *
+-[SBStatusBar hitTest:withEvent:]	UIView *	CGPoint	UIEvent *
+-[SBStatusBar touchesBegan:withEvent:]	void	NSSet *	UIEvent *
+-[SBStatusBar touchesMoved:withEvent:]	void	NSSet *	UIEvent *
+-[SBStatusBar touchesEnded:withEvent:]	void	NSSet *	UIEvent *
 
 -[SBStatusWindow holderView]	UIView *
-+[SBAlert alertWindow]	SBAlertWindow *-[SBAlert setDisplay:]	void	SBAlertDisplay *
 
-+[SBApplication snapshotsDirectory]	NSString *-[SBApplication isSameExecutableAsApplication:]	BOOL	SBApplication *-[SBApplication bundleIdentifier]	NSString *-[SBApplication setRoleIdentifier:]	void	NSString *-[SBApplication roleIdentifier]	NSString *-[SBApplication path]	NSString *-[SBApplication demoRole]	NSString *-[SBApplication setDemoRole:]	void	NSString *-[SBApplication setTags:]	void	NSArray *-[SBApplication tags]	NSArray *-[SBApplication displayIdentifier]	NSString *-[SBApplication pathForIcon]	NSString *-[SBApplication pathForSmallIcon]	NSString *-[SBApplication defaultImage:]	UIImage *	BOOL *-[SBApplication displayName]	NSString *-[SBApplication setDisplayName:]	void	NSString *-[SBApplication pid]	pid_t-[SBApplication setPid:]	void	pid_t-[SBApplication eventPort]	unsigned	-[SBApplication contextHostView]	SBAppContextHostView *-[SBApplication _setContextHostView:]	void	SBAppContextHostView *-[SBApplication launchdJobLabel]	NSString *-[SBApplication setLaunchdJobLabel:]	void	NSString *-[SBApplication seatbeltEnvironmentVariables]	NSDictionary *-[SBApplication setSeatbeltEnvironmentVariables:]	void	NSDictionary *-[SBApplication signerIdentity]	NSString *-[SBApplication _expirationDateForProvisioningProfile]	NSDate *-[SBApplication externalAccessoryProtocols]	NSArray *-[SBApplication remoteApplication]	UIRemoteApplication *
++[SBAlert alertWindow]	SBAlertWindow *
+-[SBAlert setDisplay:]	void	SBAlertDisplay *
 
-+[SBAwayController sharedAwayController]	SBAwayController *-[SBAwayController initWithUIController:]	id	SBUIController *-[SBAwayController awayModel]	SBAwayModel *-[SBAwayController awayView]	SBAwayView *-[SBAwayController pendingAlertItems]	NSArray *-[SBAwayController devicePasscode]	NSString *-[SBAwayController dimTimer]	NSTimer *-[SBAwayController isDimmed]	BOOL			-[SBAwayController enableLockScreenBundleWithName:]	void	NSString *-[SBAwayController disableLockScreenBundleWithName:]	void	NSString *
--[SBAwayDateView setTitle:]	void	NSString *-[SBAwayDateView title]	NSString *-[SBAwayDateView setArtist:]	void	NSString *-[SBAwayDateView setAlbum:]	void	NSString *
++[SBApplication snapshotsDirectory]	NSString *
+-[SBApplication isSameExecutableAsApplication:]	BOOL	SBApplication *
+-[SBApplication bundleIdentifier]	NSString *
+-[SBApplication setRoleIdentifier:]	void	NSString *
+-[SBApplication roleIdentifier]	NSString *
+-[SBApplication path]	NSString *
+-[SBApplication demoRole]	NSString *
+-[SBApplication setDemoRole:]	void	NSString *
+-[SBApplication setTags:]	void	NSArray *
+-[SBApplication tags]	NSArray *
+-[SBApplication displayIdentifier]	NSString *
+-[SBApplication pathForIcon]	NSString *
+-[SBApplication pathForSmallIcon]	NSString *
+-[SBApplication defaultImage:]	UIImage *	BOOL *
+-[SBApplication displayName]	NSString *
+-[SBApplication setDisplayName:]	void	NSString *
+-[SBApplication pid]	pid_t
+-[SBApplication setPid:]	void	pid_t
+-[SBApplication eventPort]	unsigned	
+-[SBApplication contextHostView]	SBAppContextHostView *
+-[SBApplication _setContextHostView:]	void	SBAppContextHostView *
+-[SBApplication launchdJobLabel]	NSString *
+-[SBApplication setLaunchdJobLabel:]	void	NSString *
+-[SBApplication seatbeltEnvironmentVariables]	NSDictionary *
+-[SBApplication setSeatbeltEnvironmentVariables:]	void	NSDictionary *
+-[SBApplication signerIdentity]	NSString *
+-[SBApplication _expirationDateForProvisioningProfile]	NSDate *
+-[SBApplication externalAccessoryProtocols]	NSArray *
+-[SBApplication remoteApplication]	UIRemoteApplication *
 
-+[SBTelephonyManager sharedTelephonyManager]	SBTelephonyManager *
++[SBAwayController sharedAwayController]	SBAwayController *
+-[SBAwayController initWithUIController:]	id	SBUIController *
+-[SBAwayController awayModel]	SBAwayModel *
+-[SBAwayController awayView]	SBAwayView *
+-[SBAwayController pendingAlertItems]	NSArray *
+-[SBAwayController devicePasscode]	NSString *
+-[SBAwayController dimTimer]	NSTimer *
+-[SBAwayController isDimmed]	BOOL			
+-[SBAwayController enableLockScreenBundleWithName:]	void	NSString *
+-[SBAwayController disableLockScreenBundleWithName:]	void	NSString *
+
+-[SBAwayDateView setTitle:]	void	NSString *
+-[SBAwayDateView title]	NSString *
+-[SBAwayDateView setArtist:]	void	NSString *
+-[SBAwayDateView setAlbum:]	void	NSString *
+
++[SBTelephonyManager sharedTelephonyManager]	SBTelephonyManager *
