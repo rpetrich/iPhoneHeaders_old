@@ -1,1 +1,5 @@
 Generated headers using kennytm's class-dump-z
+
+Type "make" to generate or regenerate headers.
+
+Note: this project is a work-in-progress; it does not generate proper headers just yet
